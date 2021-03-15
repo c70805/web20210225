@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript</title>
+</head>
+<body>
+Number:<input type="text" id="num" value="A"/><br/><!-- value=attribute屬性 -->
+<!--id="num"對應到的是 var n=document.getElementById("num"); -->
+<input type ="button" value="check" onclick="check()"/>
+<script type="text/javascript">
+function check()   //=value check
+{
+	var n=document.getElementById("num");	 // javascript沒有資料型態用var
+	if(isNaN(n.value))			//	n.value=value="A"	
+		alert(n.value+"不是數字");		//isNaN判斷是不是不是數字嗎   alert跳出訊息視窗
+	else
+		alert(n.value+"是數字");
+}
+</script>
+</body>
+</html>

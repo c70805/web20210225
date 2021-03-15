@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript</title>
+</head>
+<body>
+<select id="fruit" onclick="check()"> <!-- 只要執行check就會去使用check方法 onclick視窗彈出字-->
+<option value="1">Apple</option> <!-- 放入值1 在螢幕上顯示出來的會是 Apple -->
+<option value="2">Banana</option>
+<option value="3">Cherry</option></br>
+
+</select>
+<script type="text/Javascript">
+function check()
+{
+	var n=document.getElementById("fruit");
+	alert(n.value);
+}
+</script>
+</body>
+</html>

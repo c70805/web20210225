@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>HTML5_Lab</title>
+</head>
+
+<body>
+    <h1>資訊公司</h1>
+
+    <p>Lab. Infomation Corp. </p>
+    <p>
+        台北市<br />
+        大安區<br />
+        天龍路一段<br />
+        <em>Taiwan</em>
+    </p>
+
+    <p>
+        <a href="mailto:xxx@yahoo.com.tw?subject=HTML5問題">
+            xxx@yahoo.com.tw
+        </a>
+    </p>
+
+    <p>
+        夢想家<br />        
+        請填寫以下表單(<strong>粗體字</strong>是必填欄位).
+    </p>
+
+
+    <!-- ******** HTML註解 ******** -->
+
+    <form method="post" action="SupportServlet">
+
+        <fieldset>
+            <legend>
+                線上客戶服務
+            </legend>
+
+            <!--  表單內容（start）-->
+            <ol>
+                <li>
+                    <label>
+                        <strong>姓名：</strong><br />
+                        <input type="text" name="UserName" value="巨匠電腦"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        電話：<br />
+                        <input type="text" name="Phone" value="02-23826015"/>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        信箱（E-Mail）：<br />
+                        <input type="text" name="Email" value="xxx@yahoo.com.tw" />
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <strong>訊息與留言：</strong><br />
+                        <textarea name="Message" cols="30" rows="10">
+                            Add your message here
+                        </textarea>
+                    </label>
+                </li>
+            </ol>
+            <!--  表單內容（end）-->
+
+        </fieldset>
+
+        <input type="submit" value="Send（送出資料）" />
+
+    </form>
+
+</body>
+</html>
